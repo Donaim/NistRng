@@ -39,6 +39,8 @@ the git `repository <https://github.com/InsaneMonster/NistRng>`_. You are welcom
 
 **How to use**
 
+With single command: `python3 benchmarks/file_test.py benchmarks/random.org-sample.txt`
+
 For a simple use case, refer to benchmark provided in the `repository <https://github.com/InsaneMonster/NistRng>`_. For advanced use, refer to the built-in documentation
 and to the provided source code in the `repository <https://github.com/InsaneMonster/NistRng>`_.
 
