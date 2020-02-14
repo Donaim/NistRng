@@ -10,12 +10,12 @@ import sys
 from nistrng import *
 
 if __name__ == "__main__":
-    sequence = []
-
     with open(sys.argv[1], 'r') as r:
-       sequence = r.readlines()
+       text = r.read()
 
-    sequence = [int(x) for x in sequence]
+    # Skip whitespace
+    digits = [c for c in text if not c.isspace()]
+    sequence = [int(x) for x in digits]
     sequence = numpy.asarray(sequence)
 
     # Generate the sequence of integers and pack it in its 8-bit representation
